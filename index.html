@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dawash Al-Salmi - Pilot</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Tajawal', sans-serif;
+}
+
+body {
+/* وضعنا نفس تدرج الألوان المأخوذ من الخلفية الجوية الشفقية */
+background: linear-gradient(rgba(10, 15, 25, 0.75), rgba(15, 20, 30, 0.85)),
+url('background.jpg') no-repeat center center fixed;
+background-size: cover;
+color: #fff;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+
+.profile-container {
+width: 100%;
+max-width: 450px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+/* حاوية الصورة الشخصية مع الإطار الذهبي /
+.avatar-wrapper {
+position: relative;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 3px solid #d4af37; / لون ذهبي */
+padding: 4px;
+margin-bottom: 20px;
+box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.avatar-wrapper img {
+width: 100%;
+height: 100%;
+border-radius: 50%;
+object-fit: cover;
+}
+
+/* الاسم والمسمى الوظيفي */
+.name {
+font-size: 26px;
+font-weight: 700;
+margin-bottom: 5px;
+letter-spacing: 0.5px;
+}
+
+.title {
+font-size: 16px;
+color: #d4af37;
+font-weight: 500;
+margin-bottom: 5px;
+}
+
+.wings-icon {
+color: #d4af37;
+font-size: 14px;
+margin-bottom: 15px;
+}
+
+/* العبارة الوصفية */
+.bio {
+font-size: 14px;
+color: #d0d0d0;
+line-height: 1.6;
+margin-bottom: 30px;
+max-width: 340px;
+}
+
+/* أزرار السوشيال ميديا */
+.links-container {
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 15px;
+margin-bottom: 25px;
+}
+
+.social-link {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: rgba(18, 24, 38, 0.7);
+border: 1px solid rgba(212, 175, 55, 0.2);
+padding: 14px 20px;
+border-radius: 14px;
+text-decoration: none;
+color: #fff;
+transition: all 0.3s ease;
+backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+border-color: #d4af37;
+background: rgba(28, 36, 56, 0.85);
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.link-left {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.social-icon {
+font-size: 24px;
+width: 30px;
+text-align: center;
+}
+
+/* ألوان الأيقونات حسب العلامة التجارية */
+.fa-instagram { color: #e1306c; }
+.fa-snapchat { color: #fffc00; text-shadow: 0 0 5px rgba(0,0,0,0.5); }
+.fa-tiktok { color: #fff; }
+.fa-whatsapp { color: #25d366; }
+
+.link-name {
+font-size: 16px;
+font-weight: 500;
+}
+
+.link-username {
+font-size: 14px;
+color: #d4af37;
+}
+
+/* الشعار أو العبارة السفلية */
+.footer-badge {
+width: 100%;
+border: 1px solid rgba(212, 175, 55, 0.3);
+border-radius: 14px;
+padding: 15px;
+background: rgba(18, 24, 38, 0.5);
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+backdrop-filter: blur(10px);
+}
+
+.footer-badge i {
+color: #d4af37;
+font-size: 18px;
+}
+
+.footer-badge span {
+font-size: 12px;
+letter-spacing: 1.5px;
+color: #d4af37;
+font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<div class="profile-container">
+
+<div class="avatar-wrapper">
+<img src="cap.jpg" alt="CAPT/ ABDULLAH AL-ALSELMI">
+</div>
+
+<h1 class="name">‏CAPT/ ABDULLAH AL-ALSELMI</h1>
+<div class="title">Pilot</div>
+<div class="wings-icon"><i class="fa-solid fa-plane"></i></div>
+
+<p class="bio">حارب للأفق، شغوف بالطيران، أؤمن أن السماء ليست حذاً، بل بداية لكل حلم.</p>
+
+<div class="links-container">
+
+<a href="https://instagram.com/dw5hy" target="_blank" class="social-link">
+<div class="link-left">
+<i class="fa-brands fa-instagram social-icon"></i>
+<span class="link-name">Instagram</span>
+</div>
+<span class="link-username">dw5hy</span>
+</a>
+
+<a href="https://snapchat.com/add/dw5hy" target="_blank" class="social-link">
+<div class="link-left">
+<i class="fa-brands fa-snapchat social-icon"></i>
+<span class="link-name">Snapchat</span>
+</div>
+<span class="link-username">dw5hy</span>
+</a>
+
+<a href="https://tiktok.com/@dw5hy" target="_blank" class="social-link">
+<div class="link-left">
+<i class="fa-brands fa-tiktok social-icon"></i>
+<span class="Link-name">TikTok</span>
+</div>
+<span class="link-username">dw5hy</span>
+</a>
+
+<a href="https://wa.me/qr/SW6OAPRYVFQTF1
+" target="_blank" class="social-link">
+<div class="link-left">
+<i class="fa-brands fa-whatsapp social-icon"></i>
+<span class="link-name">WhatsApp</span>
+</div>
+<span class="link-username">dw5hy</span>
+</a>
+
+</div>
+
+<div class="footer-badge">
+<i class="fa-solid fa-plane-up"></i>
+<span>THE SKY IS NOT THE LIMIT — IT'S MY HOME</span>
+</div>
+
+</div>
+
+</body>
+</html>
